@@ -28,6 +28,8 @@ namespace ObjectOrientatedProgramming
 
     public class DiscountedCustomer : CustomerShadowing
     {
+        public string DiscountedCustomerName { get; set; }
+
         public override decimal CalculateDiscount()
         {
             return TotalBill - 2;

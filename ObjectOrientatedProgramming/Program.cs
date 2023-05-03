@@ -32,6 +32,7 @@ namespace ObjectOrientatedProgramming
             CustomerShadowing cd = new DiscountedCustomer();
             //this method will be called from child class
             cd.CalculateDiscount();
+            
 
             CustomerShadowing ce = new Enquiry();
             //this method will be called from parent class not child
@@ -45,9 +46,10 @@ namespace ObjectOrientatedProgramming
             //object have access to properties and methods of both files with same name
             PartialClass p = new PartialClass();
             p.Name = "tayyab";
-            p.CheckName()
+            p.CheckName();
 
-
+            CustomerCaller caller = new CustomerCaller(new DiscountA());
+            caller.CalculateDiscount();
         }
 
     }
