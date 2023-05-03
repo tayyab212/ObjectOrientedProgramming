@@ -26,6 +26,21 @@ namespace ObjectOrientatedProgramming
             e1.Validate();
             e1 = new Supervisor();
             e1.Validate();
+
+
+            //Shadowing
+            CustomerShadowing cd = new DiscountedCustomer();
+            //this method will be called from child class
+            cd.CalculateDiscount();
+
+            CustomerShadowing ce = new Enquiry();
+            //this method will be called from parent class not child
+            ce.CalculateDiscount();
+
+            Enquiry ee = new Enquiry();
+            //this method will be called from enquiry 
+            ee.CalculateDiscount();
+
         }
 
     }
