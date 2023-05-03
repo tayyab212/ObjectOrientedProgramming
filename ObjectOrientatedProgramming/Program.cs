@@ -41,6 +41,13 @@ namespace ObjectOrientatedProgramming
             //this method will be called from enquiry 
             ee.CalculateDiscount();
 
+            //Partial Class
+            //object have access to properties and methods of both files with same name
+            PartialClass p = new PartialClass();
+            p.Name = "tayyab";
+            p.CheckName()
+
+
         }
 
     }
