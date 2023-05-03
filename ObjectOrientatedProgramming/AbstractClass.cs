@@ -15,8 +15,7 @@ namespace ObjectOrientatedProgramming
         public string address { get; set; }
         public string productName { get; set; }
         public decimal productAmount { get; set; }
-        public abstract decimal CalculateDiscount();
-       
+        public abstract decimal CalculateDiscount();   
     }
     public class GoldCustomer :Customer
     {
